@@ -42,7 +42,7 @@ doctorRouter.get("/", async (req, res) => {
         const doctors = await Doctor.find(query).sort(sortOptions); 
         res.status(200).json(doctors);
     } catch (error) {
-        res.status(500).json({ error: "An error occurred" });
+        res.status(500).json({ error: "An error occurred while getting data" });
     }
 });
 

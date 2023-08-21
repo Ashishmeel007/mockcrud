@@ -13,7 +13,7 @@ app.use("/doctors",doctorRouter);
 app.listen(8080, async() => {
   try{
     await connection
-    console.log('Server started on port 7070');
+    console.log('Server started on port 8080');
   } catch(err){
     console.log(err.message)
   }
